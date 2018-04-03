@@ -1,6 +1,19 @@
 #ifndef MAINCONTROLLER_H
 #define MAINCONTROLLER_H
 
+#include "imagenpgm.h"
+#include "imagenppm.h"
+//#include "imagendcm.h"
+#include "image.h"
+#include "histogram.h"
+#include "imagefile.h"
+#include "edgedetector.h"
+#include "segmentation.h"
+//#include "globaltransformation.h"
+//#include "geometricoperation.h"
+#include "filter.h"
+
+
 #include <QImage>
 
 class MainController
@@ -36,12 +49,12 @@ public:
 
     //segmentation
 
-    void OtsuSegmentation();
+    //void OtsuSegmentation();
     void IsoDataSegmentation();
 
     //Contrast
 
-    void GammaCorrection(double myGamma);
+    //void GammaCorrection(double myGamma);
     void ContrastStreching();
 
     //filer
@@ -56,11 +69,11 @@ public:
            // histogram
            bool BimodalSegmentaion(int T);
            void EqualizateHistogram();
-           void OtsuSegmentation();
+         // virtual void OtsuSegmentation();
            void IsodataSegmentation();
 
            // contrast
-           void GammaCorrection(double r);
+          //virtual void GammaCorrection(double r);
            void ContrastStretching();
 
            // Filter

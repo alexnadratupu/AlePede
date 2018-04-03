@@ -26,14 +26,59 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    maincontroller.cpp
+    maincontroller.cpp \
+    image.cpp \
+    histogram.cpp \
+    basic.cpp \
+    filter.cpp \
+    imagenpgm.cpp \
+    edgedetector.cpp \
+    segmentation.cpp \
+    imagenppm.cpp \
+    imagefile.cpp \
+    cannywidget.cpp \
+    changeframewidget.cpp \
+    colordepthqwidget.cpp \
+    convolutionqwidget.cpp \
+    sobelqwidget.cpp \
+    structureelementqwidget.cpp \
+    thresholdqwidget.cpp \
+    windowlevelqwidget.cpp \
+    customqlabel.cpp
 
 HEADERS += \
         mainwindow.h \
-    maincontroller.h
+    maincontroller.h \
+    image.h \
+    histogram.h \
+    basic.h \
+    filter.h \
+    imagenpgm.h \
+    edgedetector.h \
+    segmentation.h \
+    imagenppm.h \
+    imagefile.h \
+    cannywidget.h \
+    changeframewidget.h \
+    colordepthqwidget.h \
+    convolutionqwidget.h \
+    sobelqwidget.h \
+    structureelementqwidget.h \
+    thresholdqwidget.h \
+    windowlevelqwidget.h \
+    customqlabel.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    cannywidget.ui \
+    changeframewidget.ui \
+    colordepthqwidget.ui \
+    convolutionqwidget.ui \
+    sobelqwidget.ui \
+    structureelementqwidget.ui \
+    thresholdqwidget.ui \
+    windowlevelqwidget.ui \
+    customqlabel.ui
 
 INCLUDEPATH += D:\openCv\opencv\release\install\include
 
@@ -42,3 +87,5 @@ LIBS += D:\openCv\opencv\release\bin\libopencv_highgui320.dll
 LIBS += D:\openCv\opencv\release\bin\libopencv_imgcodecs320.dll
 LIBS += D:\openCv\opencv\release\bin\libopencv_imgproc320.dll
 LIBS += D:\openCv\opencv\release\bin\libopencv_calib3d320.dll
+
+
